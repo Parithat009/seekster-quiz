@@ -26,7 +26,7 @@ const UserModal: React.FC<Props> = (props) => {
       onSubmit={onSubmit}
       onClose={() => handleModal({ type: 'default', visible: false })}
     >
-      {modal?.type === 'delete' && 'Are You Sure Delete ?'}
+      {modal?.type === 'delete' &&  <label className='input-label'>Are You Sure Delete ?</label>}
       {(modal?.type === 'edit' || modal?.type === 'create') && (
         <React.Fragment>
           <BaseInput

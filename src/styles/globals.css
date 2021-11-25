@@ -17,13 +17,20 @@ a {
 
 .btn {
   padding: 4px 12px;
-  background-color: white;
+  background-color: transparent;
   font-size: 12px;
   font-weight: 600;
   border-radius: 4px;
   cursor: pointer;
   width: auto;
   height: 38px;
+  color: #F7DFD5;
+  border: 2px solid #EBE2D5;
+}
+
+.btn:hover {
+  color: #1f1c1c;
+  background-color: #F7DFD5;
 }
 
 .btn-content {
@@ -36,29 +43,30 @@ a {
 }
 
 .base-span-title {
-  color: rgb(54, 52, 52);
+  color: #AEAEB2;
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .base-span-description {
-  color: rgb(54, 52, 52);
+  color: #838388;
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 500;
   margin-right: 8px;
 }
 
 .user-container {
   min-height: 100vh;
   width: 100%;
-  background-color: aquamarine;
+  background-color: #1f1d1d;
+  padding: 32px 16px;
   display: flex;
   flex-direction: column;
 }
 
 .flatlist {
-  background-color: azure;
-  padding: 32px 16px;
+  /* background-color: azure; */
+  /* padding: 32px 16px; */
   max-width: 720px;
   width: 100%;
   margin: 0px auto 16px auto;
@@ -68,7 +76,7 @@ a {
 .flatlist-item {
   display: flex;
   flex-direction: row;
-  border: 1px solid rgb(170, 168, 168);
+  border: 2px solid #838388;
   border-radius: 8px;
   padding: 8px 16px;
   margin-bottom: 8px;
@@ -107,8 +115,8 @@ a {
   margin: auto;
   padding: 16px;
   border-radius: 8px;
-  border: 2px solid #333334;
-  background-color: white;
+  border: 2px solid #838388;
+  background-color: #1A1A1C;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -160,12 +168,23 @@ a {
   font-size: 16px;
   font-weight: 600;
   margin-bottom: 4px;
+  color: #F7DFD5;
 }
 
 .input {
   width: 100%;
   height: 36px;
   border-radius: 4px;
-  border: 2px solid gray;
+  border: 2px solid #838388;
   padding: 8px;
+  outline: none;
+  color: #AEAEB2;
+  background-color: #272729;
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.input:focus {
+  color: #F7DFD5;
+  border: 2px solid #F7DFD5;
 }
